@@ -1,0 +1,198 @@
+/* styles.css */
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  background-image: url("background.jpg"); /* Замініть 'background.jpg' на своє фонове зображення */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-color 0.3s ease; /* Плавна зміна кольору фону */
+}
+
+header {
+  background-color: rgba(44, 62, 80, 0.8);
+  color: #ecf0f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Плавна зміна кольору фону */
+}
+
+.logo img {
+  max-width: 70px;
+  transition: max-width 0.3s ease; /* Плавне змінювання розміру логотипу */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Плавна зміна кольору тексту посилань */
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Плавна зміна кольору фону та тіні */
+}
+
+section#about {
+  background-color: #f9f9f9;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+section#about h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+  margin-right: 30px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+}
+
+section#schedule {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+section#schedule h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section#schedule ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+section#schedule ul li {
+  margin: 10px 0;
+  padding-left: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+section#schedule ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c"; /* Unicode код FontAwesome для "гарного" галочки */
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-size: 18px;
+  line-height: 1;
+  margin-right: 10px;
+}
+
+section#schedule strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+section#contact {
+  background-color: #f9f9f9;
+  padding: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+section#contact h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-links i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #3498db; /* Колір іконок */
+}
+
+.social-links a:hover {
+  color: #3498db; /* Колір при наведенні на посилання */
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  color: #333;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: rgba(44, 62, 80, 0.8);
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Плавна зміна кольору фону */
+}
